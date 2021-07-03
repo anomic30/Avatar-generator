@@ -1,6 +1,7 @@
 {
   "short_name": "Avatar Generator",
   "name": "Random Avatar Generator",
+  "author": "Anom Chakravorty",
   "icons": [
     {
       "src": "favicon.ico",

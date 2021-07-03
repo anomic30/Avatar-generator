@@ -14,6 +14,8 @@
 .avatar{
     height: 400px;
     width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .btns{
@@ -28,5 +30,32 @@
     width: 120px;
     margin: 10px;
     font-size: 20px;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 2px 3px 5px rgb(102, 101, 101);
+    border-radius: 15px;
+    border: none;
+    transition: 0.2s;
+}
+
+.btns > button:active{
+    box-shadow: none;
+}
+
+.generate > button{
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 2px 3px 5px rgb(102, 101, 101);
+    transition: 0.2s;
+}
+
+.generate > button:active{
+    box-shadow: none;
 }

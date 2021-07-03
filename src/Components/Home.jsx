@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../Styles/Home.css';
 import Axios from 'axios';
 
 const Home = () => {
-
-    const [url, setUrl] = useState("");
     const [sprite, setSprite] = useState("male");
     const [seed, setSeed] = useState(3008);
 
@@ -15,6 +13,29 @@ const Home = () => {
     function handleGenerate() {
         let x = Math.floor(Math.random() * 100000);
         setSeed(x);
+    }
+
+    function downloadImage(){
+        Axios({
+        method: "get",
+        url: `https://avatars.dicebear.com/api/${sprite}/${seed}.svg`,
+        responseType: "arraybuffer"
+        })
+        .then((response) => {
+            var link = document.createElement("a");
+            link.href = window.URL.createObjectURL(
+            new Blob([response.data], { type: "application/octet-stream" })
+            );
+            link.download = `${seed}.svg`;
+        
+            document.body.appendChild(link);
+        
+            link.click();
+            setTimeout(function () {
+            window.URL.revokeObjectURL(link);
+            }, 200);
+        })
+        .catch((error) => {});
     }
 
     return (
@@ -35,7 +56,8 @@ const Home = () => {
                 <img src={`https://avatars.dicebear.com/api/${sprite}/${seed}.svg`} alt="Sprite"/>
             </div>
             <div className="generate">
-                <button onClick={()=>{handleGenerate()}}>Generate</button>
+                <button onClick={() => { handleGenerate() }}>Generate</button>
+                <button onClick={()=>{downloadImage()}}>Download</button>
             </div>
         </div>
     )

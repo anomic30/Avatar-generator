@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
 .home{
     box-sizing: border-box;
     height: 100vh;
@@ -12,4 +14,19 @@
 .avatar{
     height: 400px;
     width: 400px;
+}
+
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns > button{
+    height: 50px;
+    width: 120px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
 }

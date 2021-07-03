@@ -6,7 +6,7 @@ const Home = () => {
 
     const [url, setUrl] = useState("");
     const [sprite, setSprite] = useState("male");
-    const [seed, setSeed] = useState(1111);
+    const [seed, setSeed] = useState(3008);
 
     function handleSprite(spritetype) {
         setSprite(spritetype);
@@ -26,8 +26,8 @@ const Home = () => {
                 <button onClick={()=>{handleSprite("female")}}>Female</button>
                 <button onClick={()=>{handleSprite("identicon")}}>Identicon</button>
                 <button onClick={()=>{handleSprite("bottts")}}>Bots</button>
-                <button onClick={()=>{handleSprite("jdenticon") }}>Avatars</button>
-                <button onClick={()=>{handleSprite("gridy") }}>Avatars</button>
+                <button onClick={()=>{handleSprite("jdenticon") }}>Vector</button>
+                <button onClick={()=>{handleSprite("gridy") }}>Gridy</button>
                 <button onClick={()=>{handleSprite("micah") }}>Avatars</button>
                 <button onClick={()=>{handleSprite("human")}}>Pixel</button>
             </div>

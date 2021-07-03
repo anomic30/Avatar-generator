@@ -40,7 +40,6 @@ const Home = () => {
 
     return (
         <div className="home">
-            <h1>Random Avatar Generator</h1>
             <div className="btns">
                 <button onClick={()=>{ handleSprite("avataaars") }}>Human</button>
                 <button onClick={()=>{handleSprite("male")}}>Male</button>
@@ -56,8 +55,8 @@ const Home = () => {
                 <img src={`https://avatars.dicebear.com/api/${sprite}/${seed}.svg`} alt="Sprite"/>
             </div>
             <div className="generate">
-                <button onClick={() => { handleGenerate() }}>Generate</button>
-                <button onClick={()=>{downloadImage()}}>Download</button>
+                <button id="gen" onClick={() => { handleGenerate() }}>Generate</button>
+                <button id= "down" onClick={()=>{downloadImage()}}>Download</button>
             </div>
         </div>
     )

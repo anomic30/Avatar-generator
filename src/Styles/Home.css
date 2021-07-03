@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
 
 .home{
     box-sizing: border-box;
@@ -31,7 +31,7 @@
     margin: 10px;
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: rgb(231, 231, 231);
     box-shadow: 2px 3px 5px rgb(102, 101, 101);
     border-radius: 15px;
@@ -49,13 +49,22 @@
     border-radius: 15px;
     border: none;
     font-size: 20px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-family: 'Roboto Mono', monospace;
     background-color: rgb(231, 231, 231);
     box-shadow: 2px 3px 5px rgb(102, 101, 101);
     transition: 0.2s;
+    margin: 15px;
 }
 
 .generate > button:active{
     box-shadow: none;
+}
+
+#gen{
+    background-color: #4361ee;
+}
+
+#down{
+    background-color: #ee6c4d;
 }

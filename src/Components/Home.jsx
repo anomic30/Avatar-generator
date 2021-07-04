@@ -46,14 +46,13 @@ const Home = () => {
             <div className="home">
                 <div className="btns">
                     <button onClick={() => { handleSprite("avataaars") }}>Human</button>
-                    <button onClick={() => { handleSprite("male") }}>Male</button>
-                    <button onClick={() => { handleSprite("female") }}>Female</button>
-                    <button onClick={() => { handleSprite("identicon") }}>Identi</button>
+                    <button onClick={() => { handleSprite("human") }}>Pixel</button>
                     <button onClick={() => { handleSprite("bottts") }}>Bots</button>
                     <button onClick={() => { handleSprite("jdenticon") }}>Vector</button>
-                    <button onClick={() => { handleSprite("gridy") }}>Gridy</button>
+                    <button onClick={() => { handleSprite("identicon") }}>Identi</button>
+                    <button onClick={() => { handleSprite("gridy") }}>Alien</button>
                     <button onClick={() => { handleSprite("micah") }}>Avatars</button>
-                    <button onClick={() => { handleSprite("human") }}>Pixel</button>
+                    
                 </div>
                 <div className="avatar">
                     <img src={`https://avatars.dicebear.com/api/${sprite}/${seed}.svg`} alt="Sprite" />

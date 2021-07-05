@@ -49,10 +49,14 @@
     box-shadow: none;
 }
 
+.btns >button:hover{
+    background-color: #ffffff;
+}
+
 .generate > button{
     width: 6em;
     height: 2.5em;
-    border-radius: 15px;
+    border-radius: 4px;
     border: none;
     font-size: 20px;
     font-weight: 600;

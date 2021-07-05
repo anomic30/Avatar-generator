@@ -58,7 +58,7 @@ const Home = () => {
                     <img src={`https://avatars.dicebear.com/api/${sprite}/${seed}.svg`} alt="Sprite" />
                 </div>
                 <div className="generate">
-                    <button id="gen" onClick={() => { handleGenerate() }}>Generate</button>
+                    <button id="gen" onClick={() => { handleGenerate() }}>Next</button>
                     <button id="down" onClick={() => { downloadImage() }}>Download</button>
                 </div>
             </div>
@@ -66,4 +66,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;

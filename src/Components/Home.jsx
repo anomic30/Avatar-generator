@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import '../Styles/Avatar.css';
+import '../Styles/Home.css';
 import Axios from 'axios';
 
-const Avatar = () => {
+const Home = () => {
     const [sprite, setSprite] = useState("male");
-    const [seed, setSeed] = useState(1000);
+    const [seed, setSeed] = useState(3008);
 
     function handleSprite(spritetype) {
         setSprite(spritetype);
     }
 
     function handleGenerate() {
-        let x = Math.floor(Math.random() * 1000);
+        let x = Math.floor(Math.random() * 100000);
         setSeed(x);
     }
 
@@ -66,4 +66,4 @@ const Avatar = () => {
     )
 }
 
-export default Avatar;
+export default Home;
